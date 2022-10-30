@@ -75,3 +75,9 @@ This interface shows the scores based on user responses to the questions. It inc
 [1] Once in the Welcome screen, the user starts the quiz from the beginning. The application shouldn't 
 show any previously selected responses (e.g., response to question 1 in the previous attempt), if the 
 user retakes the quiz. 
+
+Other Grading Criteria 
+
+[-2] Source code is very sparsely commented, poorly formatted (indent, spacing) 
+
+[up to -20] Submission instruction not followed (e.g., no APKs) 
