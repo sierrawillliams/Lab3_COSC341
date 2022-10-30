@@ -1,0 +1,6 @@
+Please select the correct capital name from a list of options for each province and territory in Canada
+
+Ontario -> Ottawa, Hamilton, Toronto, None
+Prince Edward Island -> St. John's, Charlottetown, Winnipeg, None
+Newfoundland and Labrador -> St. John's, Waterloo, Regina, None
+Northwest Territories -> Whitehorse, Inuvik, Yellowknife, None
