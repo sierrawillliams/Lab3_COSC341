@@ -1,3 +1,52 @@
 <resources>
     <string name="app_name">Lab3_COSC341</string>
+    <string name="title">title</string>
+    <string name="ontario">Ontario</string>
+    <string name="ottawa">Ottawa</string>
+    <string name="hamilton">Hamilton</string>
+    <string name="none">None</string>
+    <string name="toronto">Toronto</string>
+    <string name="pei">PEI</string>
+    <string name="st_john_s">St John\'s</string>
+    <string name="charlottetown">Charlottetown</string>
+    <string name="winnipeg">Winnipeg</string>
+    <string name="nfl">NFL</string>
+    <string name="waterloo">Waterloo</string>
+    <string name="regina">Regina</string>
+    <string name="nwt">NWT</string>
+    <string name="whitehorse">Whitehorse</string>
+    <string name="inuvik">Inuvik</string>
+    <string name="yellowknife">Yellowknife</string>
+    <string name="next">Next</string>
+    <string name="finish">Finish</string>
+    <string name="provincial_capital_quiz">Provincial Capital Quiz!</string>
+    <string name="number_of_questions">Number of Questions:</string>
+    <string name="load_quiz">Load Quiz</string>
+    <string name="final_score">Final Score:</string>
+    <string name="done">Done</string>
+    <string name="_0_3">0/3</string>
+    <string-array name="Ontario">
+        <item>Ottawa</item>
+        <item>Hamilton</item>
+        <item>Toronto</item>
+        <item>None</item>
+    </string-array>
+    <string-array name="PEI">
+        <item>St. John\'s</item>
+        <item>Charlottetown</item>
+        <item>Winnipeg</item>
+        <item>None</item>
+    </string-array>
+    <string-array name="NFL">
+        <item>St. John\'s</item>
+        <item>Waterloo</item>
+        <item>Regina</item>
+        <item>None</item>
+    </string-array>
+    <string-array name="NWT">
+        <item>Whitehorse</item>
+        <item>Inuvik</item>
+        <item>Yellowknife</item>
+        <item>None</item>
+    </string-array>
 </resources>

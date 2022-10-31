@@ -5,12 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Provincial Capital Quiz!"
+        android:text="@string/provincial_capital_quiz"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,7 +20,7 @@
         android:id="@+id/numOfQtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Number of Questions:"
+        android:text="@string/number_of_questions"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="10sp"
@@ -38,14 +37,14 @@
         app:layout_constraintTop_toTopOf="parent"/>
     <Button
         android:id="@+id/loadQuiz"
-        android:layout_width="80sp"
+        android:layout_width="100sp"
         android:layout_height="40sp"
-        android:text="Load Quiz"
-        android:textSize="8sp"
+        android:text="@string/load_quiz"
+        android:textSize="11sp"
         android:textColor="@color/black"
         android:backgroundTint="#D3D3D3"
         android:layout_marginTop="325sp"
-        android:layout_marginStart="300sp"
+        android:layout_marginStart="275sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

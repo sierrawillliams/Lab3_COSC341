@@ -5,7 +5,6 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     tools:context=".Question">
-
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
@@ -14,7 +13,7 @@
         android:layout_marginStart="175sp"
         android:gravity="center"
         android:textSize="23sp"
-        android:text="title"
+        android:text="@string/title"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
     <ViewFlipper
@@ -23,197 +22,227 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-        <ImageView
-            android:id="@+id/Ontario"
-            android:layout_width="300sp"
-            android:layout_height="300sp"
-            android:layout_marginTop="200sp"
-            android:layout_marginStart="45sp"
-            android:background="@drawable/image1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+        <RelativeLayout
+            android:id="@+id/Ontario_"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/Ontario"
+                android:layout_width="300sp"
+                android:layout_height="300sp"
+                android:layout_marginTop="200sp"
+                android:layout_marginStart="45sp"
+                android:background="@drawable/image1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/ontario"/>
             <RadioGroup
                 android:id="@+id/OntarioChoices"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
                 <RadioButton
                     android:id="@+id/Ottawa"
-                    android:text="Ottawa"
+                    android:text="@string/ottawa"
                     android:layout_marginStart="50sp"
                     android:layout_marginTop="500sp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"/>
                 <RadioButton
                     android:id="@+id/Hamilton"
-                    android:text="Hamilton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_marginStart="50sp"
                     android:layout_marginTop="0sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:text="@string/hamilton"
+                    tools:ignore="DuplicateClickableBoundsCheck" />
                 <RadioButton
                     android:id="@+id/Toronto"
-                    android:text="Toronto"
+                    android:text="@string/toronto"
                     android:layout_marginStart="50sp"
                     android:layout_marginTop="0sp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"/>
+
                 <RadioButton
                     android:id="@+id/NoneOntario"
-                    android:text="None"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_marginStart="50sp"
                     android:layout_marginTop="0sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:text="@string/none"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
             </RadioGroup>
-        </ImageView>
-        <ImageView
-            android:id="@+id/PEI"
-            android:layout_width="300sp"
-            android:layout_height="300sp"
-            android:layout_marginTop="200sp"
-            android:layout_marginStart="45sp"
-            android:background="@drawable/image2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/PEI_"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/PEI"
+                android:layout_width="300sp"
+                android:layout_height="300sp"
+                android:layout_marginTop="200sp"
+                android:layout_marginStart="45sp"
+                android:background="@drawable/image2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/pei"/>
             <RadioGroup
                 android:id="@+id/PEIChoices"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <RadioButton
                     android:id="@+id/St.JohnsPEI"
-                    android:text="St John's"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="50sp"
                     android:layout_marginTop="500sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:text="@string/st_john_s"
+                    tools:ignore="DuplicateClickableBoundsCheck,DuplicateSpeakableTextCheck" />
                 <RadioButton
                     android:id="@+id/Charlottetown"
-                    android:text="Charlottetown"
+                    android:text="@string/charlottetown"
                     android:layout_marginStart="50sp"
                     android:layout_marginTop="0sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
                 <RadioButton
                     android:id="@+id/Winnipeg"
-                    android:text="Winnipeg"
+                    android:text="@string/winnipeg"
                     android:layout_marginStart="50sp"
                     android:layout_marginTop="0sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
                 <RadioButton
                     android:id="@+id/NonePEI"
-                    android:text="None"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="50sp"
                     android:layout_marginTop="0sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:text="@string/none"
+                    tools:ignore="DuplicateClickableBoundsCheck" />
             </RadioGroup>
-        </ImageView>
-        <ImageView
-            android:id="@+id/NFL"
-            android:layout_width="300sp"
-            android:layout_height="300sp"
-            android:layout_marginTop="200sp"
-            android:layout_marginStart="45sp"
-            android:background="@drawable/image3"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/NFL_"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/NFL"
+                android:layout_width="300sp"
+                android:layout_height="300sp"
+                android:layout_marginTop="200sp"
+                android:layout_marginStart="45sp"
+                android:background="@drawable/image3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/nfl"/>
             <RadioGroup
                 android:id="@+id/NFLChoices"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
                 <RadioButton
                     android:id="@+id/St.JohnsNFL"
-                    android:text="St. John's"
+                    android:text="@string/st_john_s"
                     android:layout_marginStart="50sp"
                     android:layout_marginTop="500sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
                 <RadioButton
                     android:id="@+id/Waterloo"
-                    android:text="Waterloo"
+                    android:text="@string/waterloo"
                     android:layout_marginStart="50sp"
                     android:layout_marginTop="0sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
                 <RadioButton
                     android:id="@+id/Regina"
-                    android:text="Regina"
+                    android:text="@string/regina"
                     android:layout_marginStart="50sp"
                     android:layout_marginTop="0sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
                 <RadioButton
                     android:id="@+id/NoneNFL"
-                    android:text="None"
+                    android:text="@string/none"
                     android:layout_marginStart="50sp"
                     android:layout_marginTop="0sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
             </RadioGroup>
-        </ImageView>
-        <ImageView
-            android:id="@+id/NWT"
-            android:layout_width="300sp"
-            android:layout_height="300sp"
-            android:layout_marginTop="200sp"
-            android:layout_marginStart="45sp"
-            android:background="@drawable/image4"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/NWT_"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/NWT"
+                android:layout_width="300sp"
+                android:layout_height="300sp"
+                android:layout_marginTop="200sp"
+                android:layout_marginStart="45sp"
+                android:background="@drawable/image4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/nwt"/>
             <RadioGroup
                 android:id="@+id/NWTChoices"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
                 <RadioButton
                     android:id="@+id/Whitehorse"
-                    android:text="Whitehorse"
+                    android:text="@string/whitehorse"
                     android:layout_marginStart="50sp"
                     android:layout_marginTop="500sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
                 <RadioButton
                     android:id="@+id/Inuvik"
-                    android:text="Inuvik"
+                    android:text="@string/inuvik"
                     android:layout_marginStart="50sp"
                     android:layout_marginTop="0sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
                 <RadioButton
                     android:id="@+id/Yellowknife"
-                    android:text="Yellowknife"
+                    android:text="@string/yellowknife"
                     android:layout_marginStart="50sp"
                     android:layout_marginTop="0sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
                 <RadioButton
                     android:id="@+id/NoneNWT"
-                    android:text="None"
+                    android:text="@string/none"
                     android:layout_marginStart="50sp"
                     android:layout_marginTop="0sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
             </RadioGroup>
-        </ImageView>
+        </RelativeLayout>
     </ViewFlipper>
     <Button
         android:id="@+id/next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Next"
-        android:backgroundTint="#D3D3D3"
-        android:layout_marginTop="675sp"
         android:layout_marginStart="250sp"
+        android:layout_marginTop="675sp"
+        android:backgroundTint="#D3D3D3"
+        android:text="@string/next"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateClickableBoundsCheck" />
     <Button
         android:id="@+id/finish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Finish"
+        android:text="@string/finish"
         android:backgroundTint="#D3D3D3"
         android:layout_marginTop="675sp"
         android:layout_marginStart="250sp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
